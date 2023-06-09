@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>News App</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="main-nav container flex">
+        <a href="#" onclick="reload()" class="company-logo"
+          ><img src="assets/asset 1.png"
+        /></a>
+        <div class="nav-links">
+          <ul class="flex">
+            <li
+              class="hover-link nav-item"
+              id="technology"
+              onclick="onNavItemClick('technology')"
+            >
+              TECHNOLOGY
+            </li>
+            <li
+            class="hover-link nav-item"
+            id="entertainment"
+            onclick="onNavItemClick('entertainment')"
+          >
+            ENTERTAINMENT
+          </li>
+          <li
+          class="hover-link nav-item"
+          id="science"
+          onclick="onNavItemClick('science')"
+        >
+          SCIENCE
+        </li>
+        <li
+        class="hover-link nav-item"
+        id="sport"
+        onclick="onNavItemClick('sport')"
+      >
+        SPORT
+      </li>
+      <li
+      class="hover-link nav-item"
+      id="social"
+      onclick="onNavItemClick('social')"
+    >
+      SOCIAL
+    </li>
+            <li
+              class="hover-link nav-item"
+              id="finance"
+              onclick="onNavItemClick('finance')"
+            >
+              FINANCE
+            </li>
+            <li
+              class="hover-link nav-item"
+              id="politics"
+              onclick="onNavItemClick('politics')"
+            >
+              POLITICS
+            </li>
+          </ul>
+        </div>
+        <div class="search-bar flex">
+          <input
+            type="text"
+            id="search-text"
+            class="news-input"
+            placeholder="e.g. Science"
+          />
+          <button class="search-button" id="search-button">Search</button>
+        </div>
+      </div>
+    </nav>
+
+
+    <main>
+      <div class="cards-container container flex" id="cards-container"></div>
+    </main>
+
+    <template id="template-news-card">
+      <div class="card">
+        <div class="card-header">
+          <img
+            src="https://via.placeholder.com/400x200"
+            alt="news-img"
+            id="news-img"
+          />
+        </div>
+        <div class="card-content">
+          <h3 id="news-title">This is the Title</h3>
+          <h6 id="news-source" id="news-source">End Gadget 26/08/2023</h6>
+          <p class="news-desc" id="news-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+            voluptate?
+          </p>
+        </div>
+      </div>
+    </template>
+
+
+    <footer>
+      <div class="container flex footer-container">
+          <a href="#" class="footer-logo">
+              <img src="assets/asset 1.png" alt="company logo">
+          </a>
+
+          <div class="link-column flex">
+              <h4>Products</h4>
+              <a href="#" class="hover-links">Overview</a>
+              <a href="#" class="hover-links">Pricing</a>
+              <a href="#" class="hover-links">UsabilityHub</a>
+              <a href="#" class="hover-links">Customers Page</a>
+              <a href="#" class="hover-links">Status Page</a>
+          </div>
+
+          <div class="link-column flex">
+              <h4>Methadology</h4>
+              <a href="#" class="hover-links">Overview</a>
+              <a href="#" class="hover-links">Pricing</a>
+              <a href="#" class="hover-links">UsabilityHub</a>
+              <a href="#" class="hover-links">Customers Page</a>
+              <a href="#" class="hover-links">Status Page</a>
+          </div>
+
+          <div class="link-column flex">
+              <h4>Resources</h4>
+              <a href="#" class="hover-links">Overview</a>
+              <a href="#" class="hover-links">Pricing</a>
+              <a href="#" class="hover-links">UsabilityHub</a>
+              <a href="#" class="hover-links">Customers Page</a>
+              <a href="#" class="hover-links">Status Page</a>
+          </div>
+      </div>
+  </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
